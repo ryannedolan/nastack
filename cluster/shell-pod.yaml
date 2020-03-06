@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: nastack-shell
+    labels:
+        role: nastack-shell
+spec:
+    containers:
+      - name: nastack-shell
+        image: flink:1.10
+        command: [ "/opt/flink/bin/sql-client.sh" ]
+        args: [ "embedded" ]
+        stdin: true
+        tty: true
