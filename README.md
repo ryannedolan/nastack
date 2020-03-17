@@ -12,9 +12,7 @@ For now, I'm focusing on TD Ameritrade's options APIs.
 
 ## quick-start
 ```shell
-    $ brew install kind
-    $ brew install kubectl
-    $ make quick-start
+    $ make deploy
 ```
 
 ## Flink SQL Shell
@@ -23,7 +21,7 @@ You can attach to an interactive Flink SQL shell and run arbitrary
 commands/queries (WIP -- no tables or sources are defined yet):
 
 ```shell
-    $ kubectl attach -it nastack-shell
+    $ make shell
 ```
 
 Then type `help;` for options.
